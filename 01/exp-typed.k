@@ -1,4 +1,3 @@
-// Exp syntax
 module EXP-TYPED-SYNTAX
 	syntax Exp ::=  Int 
 				|	Bool
@@ -18,11 +17,9 @@ module EXP-TYPED-SYNTAX
 
 endmodule
 
-// Exp semantics
 module EXP-TYPED
 	imports EXP-TYPED-SYNTAX 
 
-	// Final value
 	syntax Type ::= "int" | "bool"
 	syntax Exp ::= Type
 	syntax KResult ::= Type
