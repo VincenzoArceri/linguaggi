@@ -1,0 +1,17 @@
+{
+	int x = 0;
+	function f(n) {
+		x = n + 1;
+		return x;
+	}
+
+	f(3);
+	print(x);
+
+	{
+		int x = 0;
+		f(3);
+		print(x);
+	}
+	print(x);
+}
