@@ -21,7 +21,7 @@ module MDT-SYNTAX
 	 * TM Transitions declaration
 	 */
 	syntax Transition ::= "(" Int "," String "," Int "," String "," Movement ")"
-						|	Transition Transition
+						|	Transition Transition [left]
 
 	/*
 	 * Initial tape declaration
